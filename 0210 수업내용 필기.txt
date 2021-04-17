@@ -1,0 +1,42 @@
+제어문: 조건문,반복문
+
+제어문은 지름길이 없다
+무조건 반복반복반복하는게 최고다
+
+약한 부분 : 비트연산자, 논리연산자 
+
+Integer.parseInt(문자); → 아스키코드 값 반환 (X)
+
+Integer.parseInt(문자열); → 아스키코드 값 반환 
+                 ------
+                 숫자모양들 "1234" → 1234
+
+
+// ※ scanner - import.util.Scanner (문자열)
+//	  BufferedReader(import 3개) 
+//	  System.in.read - import java.io.IOException - 한 문자를 ASCII Code로 변환함
+
+System.out.print("한 문자 입력 : ");  // G → 71
+ch = (char)System.in.read();   //사용자 입력값을 문자형으로 변환한후 변수 ch에 담기
+// ※ 입력 대기열에 남아있는 \r \n 을 스킵(건너뛰기)
+System.in.skip(2); 
+
+java.util.Scanner 단락 문자 패턴을 사용하여 입력을 토큰에따라 구분
+디폴트로 사용되는 단락문자를 공백이다.
+작성된 다음토큰은 next() 메소드를 활용
+Scanner sc = new Scanner(System.in)
+김아별 29 30 31
+name = ab.next(); //김아별
+ab = ab.nextInt(); // 29
+
+실행문1;
+실행문2;
+continue;
+실행문3;
+실행문4;
+
+break; (멈춘다) + 그리고 빠져나간다.
+			 -----------
+                          break를 감싸고 있는 가장 가까운 반복문을
+
+countinue; 뒷부분 무시하고 + (계속한다).
