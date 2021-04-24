@@ -1,0 +1,23 @@
+                              ■■■접근제어지시자■■■
+
+      지시자    클래스 내부     동일 패키지     상속받은 클래스    이외의 영역
+     
+      private       ○              Ⅹ                 Ⅹ              Ⅹ
+       
+      default       ○              ○                 Ⅹ              Ⅹ
+
+     protected      ○              ○                 ○              Ⅹ
+
+     public         ○              ○                 ○              ○
+
+
+※ public > protected > default > private          
+
+protected > default ! 
+
+금고 protected 해야 된단다... 네..ㅎ(접근가능)
+접근제어지시자 자리에 아무것도 안쓰면 default
+
+ex) int a; → (default) int a;
+
+int a; < protected int a;
